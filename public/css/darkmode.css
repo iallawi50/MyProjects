@@ -1,0 +1,51 @@
+.checked {
+    text-decoration: line-through;
+    color: gray !important
+}
+
+
+.body-dm {
+    background-color: #1c1e1f;
+}
+
+.text-dm {
+    color: white;
+}
+.text-dm:hover {
+    color: white;
+}
+.card-dm {
+    background-color: rgb(24, 26, 27) ;
+    color: white;
+}
+
+.form-control-dm {
+    background-color: rgb(24, 26, 27);
+    border-color: rgb(60, 65, 68);
+    color: rgb(181, 175, 166);
+}
+
+.form-control-dm:focus {
+    color: rgb(181, 175, 166);
+    background-color: rgb(24, 26, 27);
+    border-color: rgb(60, 17, 134);
+    outline-color: initial;
+    box-shadow: rgba(70, 19, 157, 0.25) 0px 0px 0px 0.2rem;
+}
+
+.custom-select-dm {
+    color: rgb(181, 175, 166);
+    background-image: url(blob:http://myprojects.test/adbe9823-4f98-4142-873e-d719492c418b);
+    background-color: rgb(24, 26, 27);
+    border-color: rgb(60, 65, 68);
+
+}
+
+.dropdown-dm 
+{
+    background-color: rgb(24, 26, 27);
+}
+
+.dropdown-dm a, .dropdown-dm label {
+    color: white;
+}

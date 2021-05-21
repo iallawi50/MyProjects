@@ -1,0 +1,32 @@
+.dropdown-toggle::after{
+    content: none;
+}
+
+.user-image {
+    width: 2em;
+    height: 2em;
+}
+
+.card {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.status {
+    margin-top: 10px;
+    font-size: $small-font-size;
+}
+
+.card-title {
+    font-family: $headings-font-family;
+}
+
+.card-title {
+    font-family: $font-family-sans-serif;
+    font-size: 1.3em;
+}
+
+#title {
+    font-family: $font-family-sans-serif;
+}
+
+$btn-active-box-shadow: none;
