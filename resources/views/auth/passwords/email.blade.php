@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/css/darkmode.css">
     
 </head>
-<body  class="{{auth()->user()->darkmode ? "body-dm" : "" }}">
+<body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow-sm">
             <div class="container">
