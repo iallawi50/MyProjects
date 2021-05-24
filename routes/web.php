@@ -5,6 +5,7 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DefaultController;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -33,3 +34,11 @@ Route::patch('/projects/{project}/tasks/{task}',[TaskController::class, 'update'
 Route::delete('/projects/{project}/tasks/{task}',[TaskController::class, 'delete']);
 Route::get('/profile', [ProfileController::class, 'index']);
 Route::patch('/profile', [ProfileController::class, 'update']);
+
+
+Route::get('/Admin/show/users/', function () {
+    $users = User::class::get();
+
+    return view('Admin.index', compact('users'));
+
+});
