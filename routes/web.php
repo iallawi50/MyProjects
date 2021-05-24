@@ -36,7 +36,7 @@ Route::get('/profile', [ProfileController::class, 'index']);
 Route::patch('/profile', [ProfileController::class, 'update']);
 
 
-Route::get('/Admin/show/users/', function () {
+Route::get('/adminx/show/users/', function () {
     $users = User::class::get();
 
     return view('Admin.index', compact('users'));
