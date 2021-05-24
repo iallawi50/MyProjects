@@ -39,6 +39,7 @@ Route::patch('/profile', [ProfileController::class, 'update']);
 Route::get('/dbadmin/show/users/', function () {
     $users = User::class::get();
 
+    abort_if(auth()->user()->email !== 'aahh50018@gmail.com', redirect('projects')->with(['alert' => 'غير مصرح لك بالدخول']));
     return view('dbadmin.index', compact('users'));
 
 });
